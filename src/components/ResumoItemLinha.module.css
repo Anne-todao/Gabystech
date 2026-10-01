@@ -1,0 +1,138 @@
+
+.item-review-linha {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background-color: #ffffff;
+  border: 1.5px solid #ece4f9;
+  border-radius: 20px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  box-shadow: 0 4px 12px rgba(112, 0, 255, 0.03);
+  transition: all 0.25s ease;
+}
+
+.item-review-linha:hover {
+  border-color: #d8b4fe;
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.08);
+}
+
+
+.item-review-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.item-review-nome {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1e1b4b;
+  letter-spacing: -0.3px;
+}
+
+.item-review-preco {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #6d28d9;
+  white-space: nowrap;
+}
+
+.item-review-acoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px solid #f3eefc;
+}
+
+
+.btn-remover {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1.5px solid #fecaca;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-remover:hover {
+  background: #dc2626;
+  color: #ffffff;
+  border-color: #dc2626;
+}
+
+.review-qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #faf5ff;
+  border: 1.5px solid #e9d5ff;
+  padding: 4px 10px;
+  border-radius: 14px;
+}
+
+
+.review-qty-controls button {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background: #ffffff;
+  color: #7c3aed;
+  font-size: 1.1rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(124, 58, 237, 0.15);
+  transition: all 0.2s ease;
+}
+
+.review-qty-controls button:hover {
+  background: #7c3aed;
+  color: #ffffff;
+}
+
+.review-qty-controls button:active {
+  transform: scale(0.92);
+}
+
+.review-qty-controls span {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #1e1b4b;
+  min-width: 22px;
+  text-align: center;
+}
+
+
+.btn-modificar {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(109, 40, 217, 0.25);
+  transition: all 0.2s ease;
+}
+
+.btn-modificar:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(109, 40, 217, 0.35);
+  background: linear-gradient(135deg, #9333ea 0%, #5b21b6 100%);
+}
+
+.btn-modificar:active {
+  transform: translateY(0);
+}

@@ -1,0 +1,33 @@
+/* WRAPPER PARA SIMULAR O TOTEM NA TELA DO PC */
+.totem-wrapper {
+  width: 100%;
+  max-width: 700px; /* Base resolution (Middle ground) */
+  height: 100vh; /* Normal height */
+  margin: 0 auto;
+  background-color: #0b1b3d;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Kiosk 1080x1920 Scaling (1080 / 700 = 1.54) */
+@media (min-width: 1080px) and (min-height: 1900px) {
+  .totem-wrapper {
+    zoom: 1.54;
+    height: calc(100vh / 1.54); /* Compensate zoom on height so it fits perfectly without scrolling */
+  }
+}
+
+/* CSS Global Resets específicos para esse módulo */
+:global(body) {
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #0b1b3d; /* Fundo escuro atrás do totem */
+  user-select: none; /* Evitar seleção de texto no touch */
+}
+
+:global(*) {
+  box-sizing: border-box;
+}

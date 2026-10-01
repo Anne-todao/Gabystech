@@ -1,0 +1,159 @@
+
+.tela-review {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  position: relative;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.tela-review h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.lista-review {
+  width: 90%;
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 120px;
+
+}
+
+.nota-fiscal-container {
+  background-color: transparent;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-review-linha {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #777;
+}
+
+.item-review-linha:last-child {
+  border-bottom: none;
+}
+
+.item-review-topo {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 1px dashed #777;
+}
+
+.item-review-acoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #0b1b3d;
+}
+
+.btn-remover {
+  background-color: #c00;
+  color: white;
+  border: 1px solid #333;
+  padding: 5px 15px;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.review-qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ccc;
+  padding: 2px 5px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.review-qty-controls button {
+  background-color: #bbb;
+  border: 1px solid #333;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-modificar {
+  background-color: white; background-color: #1d3557;
+  color: white;
+  border: 1px solid #333;
+  padding: 5px 15px;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.review-rodape-cinza {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-totais {
+  background-color: #8131e4;
+  padding: 5px 20px;
+  text-align: right;
+  font-weight: bold;
+  color: #fff;
+}
+
+.review-botoes-finais {
+  background-color: rgb(181, 121, 255);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  
+}
+
+.btn-retornar {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white; background-color: #900;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 56px;
+}
+
+.btn-pagar {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white; background-color: #1d3557;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 56px;
+}
+
+.btn-remover:active, .btn-modificar:active, .btn-retornar:active, .btn-pagar:active, .review-qty-controls button:active {
+  transform: scale(0.95);
+}

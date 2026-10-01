@@ -1,0 +1,80 @@
+
+.tela-splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 20px 50px 20px;
+  box-sizing: border-box;
+  background-color: #120924; 
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+
+.banner-placeholder {
+  width: 100%;
+  max-width: 440px;
+  flex: 1;
+  max-height: 72vh;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tela-splash:hover .banner-placeholder {
+  transform: scale(1.01);
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.texto-iniciar {
+  margin-top: 30px;
+  padding: 16px 48px;
+  background: linear-gradient(180deg, #a042f8 0%, #8322e2 100%);
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 50px;
+  border: 2px solid #b862ff;
+  box-shadow: 0 8px 20px rgba(131, 34, 226, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  animation: pulsar 2s infinite ease-in-out;
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 8px 20px rgba(131, 34, 226, 0.4);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 12px 28px rgba(131, 34, 226, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 8px 20px rgba(131, 34, 226, 0.4);
+  }
+}

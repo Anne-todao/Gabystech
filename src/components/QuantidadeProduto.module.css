@@ -1,0 +1,176 @@
+/* QuantidadeProduto.module.css */
+
+.quantity-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1.5px solid #ece4f9;
+  border-radius: 24px;
+  padding: 32px 24px;
+  max-width: 480px;
+  margin: 0 auto;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  box-shadow: 0 20px 30px -10px rgba(124, 58, 237, 0.12),
+              0 10px 15px -5px rgba(124, 58, 237, 0.04);
+  position: relative;
+  text-align: center;
+}
+
+
+.btn-voltar-inline {
+  align-self: flex-start;
+  background: transparent;
+  border: 1.5px solid #ddd6fe;
+  color: #7c3aed;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 16px;
+}
+
+.btn-voltar-inline:hover {
+  background: #faf5ff;
+  border-color: #c4b5fd;
+  color: #6d28d9;
+  transform: translateX(-2px);
+}
+
+
+.quantity-container h2:first-of-type {
+  font-size: 1.5rem !important;
+  font-weight: 800;
+  color: #1e1b4b;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+
+.produto-img {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 4.5rem;
+}
+
+.produto-foto {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.18));
+}
+
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: #faf5ff;
+  border: 1.5px solid #f0ebf8;
+  padding: 8px 16px;
+  border-radius: 16px;
+  margin-bottom: 8px;
+}
+
+.btn-qty {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: none;
+  background: #ffffff;
+  color: #7c3aed;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.1);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.btn-qty:hover {
+  background: #7c3aed;
+  color: #ffffff;
+  transform: scale(1.08);
+  box-shadow: 0 6px 14px rgba(124, 58, 237, 0.25);
+}
+
+.btn-qty:active {
+  transform: scale(0.95);
+}
+
+.qty-display {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1e1b4b;
+  min-width: 36px;
+}
+
+
+.quantity-container h2:last-of-type {
+  margin-top: 20px !important;
+  color: #6d28d9 !important;
+  font-size: 1.6rem !important;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+
+.quantity-actions {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.btn-cancelar {
+  flex: 1;
+  padding: 14px 20px;
+  border-radius: 14px;
+  border: 1.5px solid #ece4f9;
+  background: #ffffff;
+  color: #64748b;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-cancelar:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #334155;
+}
+
+.btn-adicionar {
+  flex: 2;
+  padding: 14px 20px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -5px rgba(109, 40, 217, 0.35);
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.btn-adicionar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 24px -5px rgba(109, 40, 217, 0.45);
+  background: linear-gradient(135deg, #9333ea 0%, #5b21b6 100%);
+}
+
+.btn-adicionar:active {
+  transform: translateY(0);
+}

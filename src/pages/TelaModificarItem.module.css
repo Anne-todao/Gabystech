@@ -1,0 +1,163 @@
+
+.tela-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #1e1338;
+  padding: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+
+.tela-review > h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+
+.quantity-container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.quantity-container h2 {
+  color: #2b1354;
+  margin: 0;
+  font-weight: 700;
+}
+
+.quantity-container h2[style*="marginTop"] {
+  color: #7b2cbf !important;
+  font-size: 1.8rem;
+}
+
+.produto-img {
+  width: 180px;
+  height: 180px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.produto-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.btn-qty {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background-color: #7b2cbf; 
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.btn-qty:hover {
+  background-color: #6a24a6;
+  transform: scale(1.05);
+}
+
+.btn-qty:active {
+  transform: scale(0.95);
+}
+
+.qty-display {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2b1354;
+  min-width: 30px;
+  text-align: center;
+}
+
+.quantity-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn-adicionar {
+  width: 100%;
+  padding: 14px;
+  background-color: #7b2cbf;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-adicionar:hover {
+  background-color: #6a24a6;
+  transform: translateY(-2px);
+}
+
+.btn-cancelar {
+  width: 100%;
+  padding: 14px;
+  background-color: #e63946;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-cancelar:hover {
+  background-color: #d62828;
+  transform: translateY(-2px);
+}
+
+.btn-voltar-inline {
+  width: 100%;
+  padding: 12px;
+  background-color: #f0ecf9;
+  color: #5a2a86;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-voltar-inline:hover {
+  background-color: #e2daebd1;
+}

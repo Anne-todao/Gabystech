@@ -1,0 +1,89 @@
+/* Container Principal */
+.tela-pagamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #1e1338; /* Fundo roxo escuro padrão da interface */
+  padding: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Título Principal */
+.tela-pagamento h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Container de Opções de Pagamento */
+.opcoes-pagamento {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  padding: 32px 24px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra suave padrão */
+}
+
+/* Botões de Forma de Pagamento */
+.opcoes-pagamento button {
+  width: 100%;
+  padding: 16px 20px;
+  background-color: #f7f5fc;
+  color: #2b1354;
+  border: 2px solid #e2daeb;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.opcoes-pagamento button:hover {
+  background-color: #7b2cbf; /* Roxo vibrante ao passar o mouse */
+  color: #ffffff;
+  border-color: #7b2cbf;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(123, 44, 191, 0.3);
+}
+
+.opcoes-pagamento button:active {
+  transform: translateY(0);
+}
+
+/* Botão Voltar */
+.btn-voltar-review {
+  margin-top: 24px;
+  width: 100%;
+  max-width: 420px;
+  padding: 14px;
+  background-color: #f0ecf9;
+  color: #5a2a86;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-voltar-review:hover {
+  background-color: #e2daebd1;
+  transform: translateY(-2px);
+}
+
+.btn-voltar-review:active {
+  transform: translateY(0);
+}

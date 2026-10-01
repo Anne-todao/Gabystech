@@ -1,0 +1,100 @@
+
+.produto-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1.5px solid #ece4f9;
+  border-radius: 24px;
+  padding: 20px 16px 18px 16px;
+  cursor: pointer;
+  user-select: none;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 10px 25px -5px rgba(124, 58, 237, 0.05),
+              0 8px 10px -6px rgba(0, 0, 0, 0.01);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.produto-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+.produto-card:hover {
+  transform: translateY(-8px);
+  border-color: #d8b4fe;
+  box-shadow: 0 20px 30px -10px rgba(124, 58, 237, 0.2),
+              0 10px 15px -5px rgba(124, 58, 237, 0.08);
+  background: linear-gradient(180deg, #ffffff 0%, #faf5ff 100%);
+}
+
+.produto-card:hover::before {
+  opacity: 1;
+}
+
+
+.produto-card:active {
+  transform: translateY(-2px) scale(0.98);
+}
+
+
+.produto-img {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  font-size: 3.5rem;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.produto-card:hover .produto-img {
+  transform: scale(1.08) rotate(-2deg);
+}
+
+
+.produto-foto {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 12px rgba(0, 0, 0, 0.18));
+  transition: filter 0.3s ease;
+}
+
+.produto-card:hover .produto-foto {
+  filter: drop-shadow(0 16px 16px rgba(124, 58, 237, 0.25));
+}
+
+
+.produto-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e1b4b;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.3px;
+  line-height: 1.35;
+}
+
+
+.produto-card p {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #6d28d9;
+  margin: 0;
+  background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
